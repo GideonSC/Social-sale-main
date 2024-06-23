@@ -618,6 +618,7 @@ body {
     margin: 0;
     font-size: 1.5rem;
     color: #333;
+	text-align: center;
 }
 
 .profile-card-body {
@@ -656,6 +657,8 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+	margin-left: 40%;
+	margin-top: 10px;
 }
 
 .btn-submit:hover {
