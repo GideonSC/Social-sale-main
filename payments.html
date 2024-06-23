@@ -8,6 +8,7 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
     <link rel="stylesheet" href="assets/templates/basic/css/dashboard.css">
+	<link rel="stylesheet" href="assets/templates/basic/css/payments.css">
 
 
 	<title>Social Sale</title>
@@ -104,97 +105,52 @@
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
-							<a class="active" href="#">Home</a>
+							<a class="active" href="#">Payments History</a>
 						</li>
 					</ul>
 				</div>
 				
 			</div>
 
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-shopping-bag-alt'></i>
-					<span class="text">
-						<h3>0</h3>
-						<p>Orders</p>
-					</span>
-				</li>
-				<li>
-                    <i class='bx bxs-naira-sign'>N</i>
-					<span class="text">
-						<h3>N0</h3>
-						<p>Balance</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-dollar-circle' ></i>
-					<span class="text">
-						<h3>N0</h3>
-						<p>Payments</p>
-					</span>
-				</li>
-			</ul>
+		
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Via</th>
+                        <th>Time Initiated</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bank Transfer</td>
+                        <td>2024-06-21 14:23</td>
+                        <td>1,400.00 NGN</td>
+                        <td>Completed</td>
+                        <td><button class="action-btn">Download Receipt</button></td>
+                    </tr>
+                    <tr>
+                        <td>Bank Transfer</td>
+                        <td>2024-06-20 10:15</td>
+                        <td>2,500.00 NGN</td>
+                        <td>Pending</td>
+                        <td><button class="action-btn">Download Receipt</button></td>
+                    </tr>
+                </tbody>
+            </table>
 
 
-            
-			<div class="table-data">
-				<div class="order">
-					<div class="head">
-						<h3>Recent Orders</h3>
-						
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>Order Type</th>
-								<th>Date Ordered</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src="assets/images/product/fb1.png">
-									<p>FB | 0-5k | 6 Years</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Completed</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/images/logoIcon/logo.png">
-									<p>Demo</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">Pending</span></td>
-							</tr>
-							<tr>
-								<td>
-                                    <img src="assets/images/logoIcon/logo.png">
-									<p>Demo</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status process">Process</span></td>
-							</tr>
-							<tr>
-								<td>
-                                    <img src="assets/images/logoIcon/logo.png">
-									<p>Demo</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">Pending</span></td>
-							</tr>
-							<tr>
-								<td>
-                                    <img src="assets/images/logoIcon/logo.png">
-									<p>Demo</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Completed</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+
+
+
+
+
+
+
+
 
 		</main>
 		<!-- MAIN -->
