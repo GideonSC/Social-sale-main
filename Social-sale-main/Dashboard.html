@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Social Sale</title>
+
+    <meta name="title" Content="Social Sale- Dashboard">
+    <meta name="description" content="Social Sale- Buy all social account at the cheapest prices.">
+    <meta name="keywords" content="account selling platform,NO.1 Logs Marketplace">
+    <link rel="shortcut icon" href="assets/images/logoIcon/favicon.png" type="image/x-icon">
+
+
+    <link rel="apple-touch-icon" href="assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Social Sale - Dashboard">
+
+    <meta itemprop="name" content="Social Sale - Dashboard">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="assets/images/seo/65e3a942357ed1709418818.jpg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Social Sale- Buy all social account at the cheapest prices.">
+    <meta property="og:description" content="Social Sale - Buy all social account at the cheapest prices.">
+    <meta property="og:image" content="assets/images/seo/65e3a942357ed1709418818.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1180" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:url" content="#">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="assets/global/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/global/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="global/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/templates/basic/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/templates/basic/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/templates/basic/css/odometer.css">
+
+
+    <link rel="stylesheet" href="assets/templates/basic/css/main.css">
+    <link rel="stylesheet" href="assets/templates/basic/css/custom.css">
+
+    <style>
+        .custom--card-two {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-clip: border-box;
+            border: 0px solid rgba(0, 0, 0, 0);
+            border-radius: .25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .widgets-icons-2 {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            border-radius: 10px;
+            background: hsl(var(--white));
+            border-radius: 50%;
+        }
+
+        .has-anchor {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        .domain-search-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            aspect-ratio: 1;
+            padding: 5px;
+            display: grid;
+            place-items: center;
+            color: #888;
+        }
+
+        .domain-search-icon~.form--control {
+            padding-left: 45px;
+        }
+
+        .domain-search-icon-reset {
+            position: absolute;
+            right: 0px;
+            transform: translateY(-50%);
+            top: 50%;
+            color: #888;
+            visibility: visible;
+            opacity: 1;
+            cursor: pointer;
+            margin-right: 4px;
+            height: auto;
+        }
+
+        @media (max-width: 991px) {
+            .collapable-sidebar {
+                position: fixed;
+                left: 0;
+                min-width: 320px;
+                top: 0;
+                background-color: hsl(var(--white));
+                z-index: 9999;
+                transform: translateX(-120%);
+                transition: .3s linear;
+                margin-right: 40px;
+            }
+            .collapable-sidebar__inner {
+                height: 100vh;
+                overflow-y: auto;
+            }
+            .collapable-sidebar.show {
+                transform: translateX(0);
+            }
+            .collapable-sidebar__close {
+                background-color: hsl(var(--danger));
+                border: 0;
+                font-size: 20px;
+                line-height: 1;
+                color: #fff;
+                position: absolute;
+                right: -40px;
+                top: 0;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .show-sidebar-bar {
+                font-size: 30px;
+                color: hsl(var(--base));
+                line-height: 1;
+                display: inline-block;
+                transform: translateY(-15px);
+            }
+        }
+
+        @media (max-width: 424px) {
+            .collapable-sidebar {
+                min-width: 280px;
+            }
+        }
+
+        .collapable-sidebar .btn-link {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: hsl(var(--heading-color));
+            text-decoration: none;
+            border: 1px solid hsl(var(--black)/0.2);
+            text-align: center;
+            padding: 8px 10px;
+            border-radius: .25rem;
+        }
+
+        .collapable-sidebar .btn-link:hover {
+            background: hsl(var(--base));
+            border-color: hsl(var(--base));
+            color: hsl(var(--white));
+        }
+
+        .collapable-sidebar .card-footer {
+            background: transparent;
+        }
+
+        .collapable-sidebar .list-group-item:hover {
+            color: hsl(var(--base));
+        }
+
+        .user-dashboard div[class*=col-xl-4]:nth-child(1) .custom--card-two {
+            background-color: hsl(var(--info)/0.1) !important;
+            border-left: 5px solid hsl(var(--info));
+        }
+
+        .user-dashboard div[class*=col-xl-4]:nth-child(1) .custom--card-two .widgets-icons-2 {
+            color: hsl(var(--info));
+        }
+
+        .user-dashboard div[class*=col-xl-4]:nth-child(2) .custom--card-two {
+            background-color: hsl(var(--base)/0.1) !important;
+            border-left: 5px solid hsl(var(--base));
+        }
+
+        .user-dashboard div[class*=col-xl-4]:nth-child(2) .custom--card-two .widgets-icons-2 {
+            color: hsl(var(--base));
+        }
+
+        .user-dashboard div[class*=col-xl-4]:nth-child(3) .custom--card-two {
+            background-color: hsl(var(--purple)/0.1) !important;
+            border-left: 5px solid hsl(var(--purple));
+        }
+
+        .user-dashboard div[class*=col-xl-4]:nth-child(3) .custom--card-two .widgets-icons-2 {
+            color: hsl(var(--purple));
+        }
+    </style>
+    <style>
+        .nav-menu .nav-item:nth-last-child(2) {
+            padding-right: 30px;
+        }
+
+        @media screen and (max-width: 991px) {
+            .nav-menu .nav-item:nth-last-child(2) {
+                padding-right: 0px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/templates/basic/css/color.php?color=FF4001">
+</head>
+
+<body>
+    <!--
+    <div class="preloader">
+        <div class="loader-p"></div>
+    </div>
+    -->
+    <div class="body-overlay"></div>
+    <div class="sidebar-overlay"></div>
+    <!--<a class="scroll-top"><i class="las la-long-arrow-alt-up"></i></a>-->
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand logo" href="#">
+                    <img src="assets/images/logoIcon/logo.png" alt="image" >
+            </a>
+                <button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="hiddenNav"><i class="las la-bars"></i></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-menu ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="payments.html">Payments</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="orders.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile-setting.html">Profile</a>
+                        </li>
+                 
+                        <li class="nav-item d-block">
+                            <div class="accounts-buttons d-flex align-items-center">
+                                <a href="index.html" class="accounts-buttons__link btn btn--base btn--sm">
+                                <i class="fas fa-sign-in-alt"></i> Logout                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--<?php-->
+    <!--    $breadcrumb = getContent('breadcrumb.content', true);-->
+    <!--?>-->
+    <!--<section class="breadcrumb bg-img" data-background-image="https://no1logsmarketplace.com/placeholder-image/1920x335">-->
+    <!--    <div class="container">-->
+    <!--        <div class="row justify-content-center">-->
+    <!--            <div class="col-lg-8">-->
+    <!--                <div class="breadcrumb__wrapper">-->
+    <!--                    <h2 class="breadcrumb__title"> Dashboard</h2>-->
+    <!--                    <ul class="breadcrumb__list">-->
+    <!--                        <li class="breadcrumb__item"><a href="https://no1logsmarketplace.com" class="breadcrumb__link">Home</a> </li>-->
+    <!--                        <li class="breadcrumb__item"><i class="fas fa-arrow-right"></i></li>-->
+    <!--                        <li class="breadcrumb__item"> <span class="breadcrumb__item-text"> Dashboard </span> </li>-->
+    <!--                    </ul>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+
+    <div class="py-120">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="collapable-sidebar">
+                        <div class="collapable-sidebar__inner">
+                            <button type="button" class="collapable-sidebar__close d-lg-none d-block"><i class="las la-times"></i>
+                    </button>
+                            <div class="card mb-4">
+                                <div class="card-header border-bottom p-2 bg--base text--white text-center fw-bold">My Information </div>
+                                <div class="card-body">
+                                    <strong>Stephen Gideon</strong>
+                                    <span class="d-block mt-1">
+                                
+                            </span>
+                                    <span class="d-block mt-1">
+                                
+                                
+                                
+                            </span>
+                                    <span class="mt-1">Nigeria</span>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="profile-setting.html" class="btn-link w-100"><i
+                                    class="las la-pencil-alt"></i> Update</a>
+                                </div>
+                            </div>
+                           
+                            <nav id="actionMenu" class="collapse d-block sidebar collapse bg-white border">
+                                <div class="position-sticky">
+                                    <div class="list-group list-group-flush">
+                                        <span class="border-bottom p-2 bg--base text-white text-center fw-bold">
+                                    <span>Shortcuts</span>
+                                        </span>
+                                        <a href="product.html" class="list-group-item">
+                                    Products                                </a>
+                                    
+                                        <a href="logout.html" class="list-group-item">
+                                    Logout                                </a>
+                                        
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-lg-none d-block">
+                    <div class="col-12 ">
+                        <div class="show-sidebar-bar">
+                            <i class="las la-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row user-dashboard">
+                        <div class="col-xl-4 col-md-12">
+                            <div class="custom--card-two">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="mb-0">Add Funds</p>
+                                            <h4 class="my-1">Fund Wallet</h4>
+                                        </div>
+                                        <span class="widgets-icons-2 ms-auto">
+                                    <i class="fas fa-ticket-alt"></i>
+                                </span>
+                                        <a href="https://no1logsmarketplace.com/user/fund-wallet" class="has-anchor"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-6">
+                            <div class="custom--card-two">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="mb-0">Payments</p>
+                                            <h4 class="my-1">₦0.00
+                                            </h4>
+                                        </div>
+                                        <span class="widgets-icons-2 ms-auto">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </span>
+                                        <a href="https://no1logsmarketplace.com/user/payment/history" class="has-anchor"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-6">
+                            <div class="custom--card-two">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="mb-0">Orders</p>
+                                            <h4 class="my-1">0</h4>
+                                        </div>
+                                        <span class="widgets-icons-2 ms-auto">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                        <a href="https://no1logsmarketplace.com/user/orders" class="has-anchor"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12">
+                            <div class="custom--card-two bg-info">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="mb-0 text-white">Balance</p>
+                                            <h4 class="my-1">₦0.00</h4>
+                                        </div>
+
+                                        <span class="widgets-icons-2 ms-auto">
+                                    <i class="fas fa-ticket-alt"></i>
+                                </span>
+                                        <a href="https://no1logsmarketplace.com/user/fund-wallet" class="has-anchor"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12">
+                            <div class="custom--card-two bg-warning">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="mb-0 text-white">Tickets</p>
+                                            <h4 class="my-1">0</h4>
+                                        </div>
+                                        <span class="widgets-icons-2 ms-auto">
+                                    <i class="fas fa-ticket-alt"></i>
+                                </span>
+                                        <a href="https://no1logsmarketplace.com/ticket" class="has-anchor"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12">
+                            <div class="custom--card-two bg-secondary">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="mb-0 text-white">Referrals</p>
+                                            <h4 class="my-1">0</h4>
+                                        </div>
+
+                                        <span class="widgets-icons-2 ms-auto">
+                                    <i class="fas fa-user-friends"></i>
+                                </span>
+                                        <a href="https://no1logsmarketplace.com/user/referrals" class="has-anchor"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <h5 class="mt-4 mb-4">Latest Payments History</h5>
+                            <div class="table-responsive">
+                                <table class="table table--responsive--xl custom--table">
+                                    <thead>
+                                        <tr>
+                                            <th>Gateway | Trx</th>
+                                            <th>Paid at</th>
+                                            <th>Amount</th>
+                                            <!--<th>Conversion</th>-->
+                                            <th>Status</th>
+                                            <th>Admin feedback</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="100%" class="text-center">Data not found</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="detailModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title">Details</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush userData">
+                            </ul>
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark btn--sm" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-area">
+        <div class="pb-60 pt-120">
+            <div class="container">
+                <div class="row justify-content-center gy-5">
+                    <div class="col-xl-4 col-sm-6 col-xsm-6">
+                        <div class="footer-item">
+                            <div class="footer-item__logo">
+                                <a href="https://no1logsmarketplace.com"> <img src="https://no1logsmarketplace.com/assets/images/logoIcon/logo.png" alt="image"></a>
+                            </div>
+                            <p class="footer-item__desc">At No.1 Logs Marketplace, we pride ourselves on offering a seamless and secure platform for buying and selling social media accounts.</p>
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a href="https://www.facebook.com/" class="social-list__link flex-center" target="_blank">
+                                        <i class="fab fa-facebook"></i>                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.twitter.com/" class="social-list__link flex-center" target="_blank">
+                                        <i class="fab fa-twitter"></i>                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.linkedin.com/" class="social-list__link flex-center" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.instagram.com/" class="social-list__link flex-center" target="_blank">
+                                        <i class="fab fa-instagram"></i>                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-6 col-xsm-6">
+                        <div class="footer-item">
+                            <h5 class="footer-item__title">Useful Links</h5>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item"><a href="https://no1logsmarketplace.com/products" class="footer-menu__link">Product</a></li>
+                                <li class="footer-menu__item"><a href="https://no1logsmarketplace.com/user/login" class="footer-menu__link">Login</a></li>
+                                <li class="footer-menu__item"><a href="https://no1logsmarketplace.com/user/register" class="footer-menu__link">Register </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-xsm-6">
+                        <div class="footer-item">
+                            <h5 class="footer-item__title">Resources</h5>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item"><a href="https://no1logsmarketplace.com/blog" class="footer-menu__link">Blog </a></li>
+                                <li class="footer-menu__item"><a href="https://no1logsmarketplace.com/contact" class="footer-menu__link">Contact Us </a></li>
+                                <li class="footer-menu__item"><a href="https://no1logsmarketplace.com/cookie-policy" class="footer-menu__link">Cookie Policy </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-xsm-6">
+                        <div class="footer-item">
+                            <h5 class="footer-item__title">Contact Us</h5>
+                            <ul class="footer-contact-menu">
+                                <li class="footer-contact-menu__item">
+                                    <div class="footer-contact-menu__item-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="footer-contact-menu__item-content">
+                                        <p>Nigeria</p>
+                                    </div>
+                                </li>
+                                <li class="footer-contact-menu__item">
+                                    <div class="footer-contact-menu__item-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="footer-contact-menu__item-content">
+                                        <p>support@no1logsmarketplace.com</p>
+                                    </div>
+                                </li>
+                                <li class="footer-contact-menu__item">
+                                    <div class="footer-contact-menu__item-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="footer-contact-menu__item-content">
+                                        <p>[Protected]</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-footer py-3">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-sm-6">
+                        <div class="bottom-footer__text"> &copy; Copyright 2024 . All rights reserved.</div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="bottom-footer__menu d-flex align-items-end justify-content-end">
+                            <a href="https://no1logsmarketplace.com/policy/privacy-policy/42" class="bottom-footer__link">
+                                Privacy Policy 
+                            </a>
+                            <a href="https://no1logsmarketplace.com/policy/rules/43" class="bottom-footer__link">
+                                Rules 
+                            </a>
+                            <a href="https://no1logsmarketplace.com/policy/terms-and-conditions/81" class="bottom-footer__link">
+                                Terms and conditions 
+                            </a>
+                            <a href="https://no1logsmarketplace.com/policy/faqs/85" class="bottom-footer__link">
+                                FAQs 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://no1logsmarketplace.com/assets/global/js/jquery-3.6.0.min.js"></script>
+    <script src="https://no1logsmarketplace.com/assets/global/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://no1logsmarketplace.com/assets/templates/basic/js/owl.carousel.min.js"></script>
+    <script src="https://no1logsmarketplace.com/assets/templates/basic/js/owl.carousel.filter.js"></script>
+    <script src="https://no1logsmarketplace.com/assets/templates/basic/js/odometer.min.js"></script>
+    <script src="https://no1logsmarketplace.com/assets/templates/basic/js/viewport.jquery.js"></script>
+    <script src="https://no1logsmarketplace.com/assets/templates/basic/js/main.js"></script>
+
+    <script src="https://no1logsmarketplace.com/assets/templates/basic/js/jquery.validate.js"></script>
+
+    <script>
+        (function($) {
+
+            "use strict";
+            $('.detailBtn').on('click', function() {
+                var modal = $('#detailModal');
+
+                var userData = $(this).data('info');
+                var html = '';
+                if (userData) {
+                    userData.forEach(element => {
+                        if (element.type != 'file') {
+                            html += `
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>${element.name}</span>
+                                <span">${element.value}</span>
+                            </li>`;
+                        }
+                    });
+                }
+
+                if ($(this).data('admin_feedback') != undefined) {
+                    var adminFeedback = `
+                        <div class="my-3 ms-2">
+                            <strong>Admin Feedback</strong>
+                            <p>${$(this).data('admin_feedback')}</p>
+                        </div>
+                    `;
+                } else {
+                    var adminFeedback = '';
+                }
+
+                if (!html && !adminFeedback) {
+                    html = `<span class='d-block text-center mt-2 mb-2'>Data not found</span>`;
+                }
+
+                modal.find('.userData').html(html);
+                modal.find('.feedback').html(adminFeedback);
+                modal.modal('show');
+            });
+
+            $('.search-form').on('submit', function(e) {
+                e.preventDefault();
+                var keyword = $(this).find('input[name=search]').val();
+                window.location.href = "https://no1logsmarketplace.com/products?search=" + keyword;
+            })
+
+            // Responsive Sidebar
+            $(".show-sidebar-bar").on("click", function() {
+                $(".collapable-sidebar").addClass('show');
+                $(".sidebar-overlay").addClass('show');
+            });
+            $(".collapable-sidebar__close, .sidebar-overlay").on("click", function() {
+                $(".collapable-sidebar").removeClass('show');
+                $(".sidebar-overlay").removeClass('show');
+            });
+
+        })(jQuery);
+    </script>
+    <script>
+        (function($) {
+            "use strict";
+
+            $('form').on('submit', function() {
+                if (!$(this).hasClass('exclude')) {
+                    if ($(this).valid()) {
+                        $(':submit', this).attr('disabled', 'disabled');
+                    }
+                }
+            });
+
+        })(jQuery);
+    </script>
+
+
+    <link rel="stylesheet" href="https://no1logsmarketplace.com/assets/global/css/iziToast.min.css">
+    <script src="https://no1logsmarketplace.com/assets/global/js/iziToast.min.js"></script>
+
+    <script>
+        "use strict";
+
+        function notify(status, message) {
+            if (typeof message == 'string') {
+                iziToast[status]({
+                    message: message,
+                    position: "topRight"
+                });
+            } else {
+                $.each(message, function(i, val) {
+                    iziToast[status]({
+                        message: val,
+                        position: "topRight"
+                    });
+                });
+            }
+        }
+    </script>
+
+
+    <script>
+        (function($) {
+            "use strict";
+            $(".langSel").on("change", function() {
+                window.location.href = "https://no1logsmarketplace.com/change/" + $(this).val();
+            });
+
+            $('.policy').on('click', function() {
+                $.get('https://no1logsmarketplace.com/cookie/accept', function(response) {
+                    $('.cookies-card').addClass('d-none');
+                });
+            });
+
+            setTimeout(function() {
+                $('.cookies-card').removeClass('hide')
+            }, 2000);
+
+            var inputElements = $('[type=text],select,textarea');
+            $.each(inputElements, function(index, element) {
+                element = $(element);
+
+                if (element.hasClass('exclude')) {
+                    return false;
+                }
+
+                element.closest('.form-group').find('label').attr('for', element.attr('name'));
+                element.attr('id', element.attr('name'))
+            });
+
+            $.each($('input, select, textarea'), function(i, element) {
+                var elementType = $(element);
+                if (elementType.attr('type') != 'checkbox') {
+                    if (element.hasAttribute('required')) {
+                        $(element).closest('.form-group').find('label').addClass('required');
+                    }
+                }
+            });
+
+        })(jQuery);
+    </script>
+
+
+    <!--whatsapp button-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://chat.whatsapp.com/KQPkgM8ViHQBsNIqoWbvWP" class="float" target="_blank"> 
+<i class="fa fa-whatsapp my-float"></i> 
+</a>
+    <style>
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 10px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
+
+    <!--whatsapp button end-->
+
+    <!--telegram button-->
+    <input class='chat-menu hidden' id='offchat-menu' type='checkbox' />
+
+    <div class='sticky-button blink_me' id='sticky-button'>
+        <label for='offchat-menu'>
+				<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+					<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+				</svg>
+			</label>
+    </div>
+
+
+
+    <div class='sticky-chat'>
+        <div class='chat-content'>
+            <div class='chat-header'>
+                <svg viewbox='0 0 32 32'>
+						<path d='M24,22a1,1,0,0,1-.64-.23L18.84,18H17A8,8,0,0,1,17,2h6a8,8,0,0,1,2,15.74V21a1,1,0,0,1-.58.91A1,1,0,0,1,24,22ZM17,4a6,6,0,0,0,0,12h2.2a1,1,0,0,1,.64.23L23,18.86V16.92a1,1,0,0,1,.86-1A6,6,0,0,0,23,4Z'/>
+						<rect height='2' width='2' x='19' y='9'/>
+						<rect height='2' width='2' x='14' y='9'/>
+						<rect height='2' width='2' x='24' y='9'/>
+						<path d='M8,30a1,1,0,0,1-.42-.09A1,1,0,0,1,7,29V25.74a8,8,0,0,1-1.28-15,1,1,0,1,1,.82,1.82,6,6,0,0,0,1.6,11.4,1,1,0,0,1,.86,1v1.94l3.16-2.63A1,1,0,0,1,12.8,24H15a5.94,5.94,0,0,0,4.29-1.82,1,1,0,0,1,1.44,1.4A8,8,0,0,1,15,26H13.16L8.64,29.77A1,1,0,0,1,8,30Z'/>
+
+					</svg>
+                <div class='title'> Customer Care <span>NO.1 Logs Marketplace</span></div>
+            </div>
+            <div class='chat-text'>
+                <span>How can we help you today? </span>
+                <span class='typing'>
+						<svg viewbox='0 0 512 512'>
+							<circle cx='256' cy='256' r='48'/>
+							<circle cx='416' cy='256' r='48'/>
+							<circle cx='96' cy='256' r='48'/>
+						</svg>
+					</span>
+            </div>
+        </div>
+        <span><input class="schat" type="text" placeholder="Start chat... " autofocus></span>
+        <a class='chat-button' href="https://t.me/No1logsmarketplaceteam" rel='nofollow noreferrer' target='_blank'>
+				<svg viewBox='0 0 32 32' style="fill:#0091EA">
+					<path class='cls-1' d='M19.47,31a2,2,0,0,1-1.8-1.09l-4-7.57a1,1,0,0,1,1.77-.93l4,7.57L29,3.06,3,12.49l9.8,5.26,8.32-8.32a1,1,0,0,1,1.42,1.42l-8.85,8.84a1,1,0,0,1-1.17.18L2.09,14.33a2,2,0,0,1,.25-3.72L28.25,1.13a2,2,0,0,1,2.62,2.62L21.39,29.66A2,2,0,0,1,19.61,31Z'/>
+				</svg>
+			</a>
+    </div>
+
+    <style>
+        /* Telegram Sticky Chat Button Widget */
+
+        :root {
+            --warna-background: #4dc247;
+            --warna-bg-chat: #f0f5fb;
+            --warna-icon: #fff;
+            --warna-text: #505050;
+            --warna-text-alt: #989b9f;
+            --lebar-chatbox: 320px;
+        }
+
+        .sticky-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            right: 20px;
+            bottom: 10px;
+            width: 45px;
+            height: 45px;
+            border: 2px solid #0091EA;
+            background-color: #fefefe;
+            border-radius: 50%;
+            box-shadow: 1px 1px 5px 5px #0091EA;
+        }
+
+        .sticky-button a,
+        .sticky-button label {
+            display: flex;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+        }
+
+        .sticky-button a svg,
+        .sticky-button label svg {
+            margin: auto;
+            fill: #0091EA
+        }
+
+        .sticky-button label svg.svg-2 {
+            display: none
+        }
+
+        .sticky-chat {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 70%;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            z-index: 21;
+            opacity: 0;
+            visibility: hidden;
+            line-height: normal
+        }
+
+        .sticky-chat .chat-content {
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .05);
+            overflow: hidden
+        }
+
+        .sticky-chat .chat-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #0091EA;
+            overflow: hidden
+        }
+
+        .sticky-chat .chat-header:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 70px;
+            height: 65px;
+            background: rgba(0, 0, 4, .000);
+            border-radius: 70px 0 5px 0;
+        }
+
+        .sticky-chat .chat-header svg {
+            width: 35px;
+            height: 35px;
+            flex: 0 0 auto;
+            fill: var(--warna-icon)
+        }
+
+        .sticky-chat .chat-header .title {
+            padding-left: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            color: var(--warna-icon)
+        }
+
+        .sticky-chat .chat-header .title span {
+            font-size: 11px;
+            font-weight: 400;
+            display: block;
+            line-height: 1.58em;
+            margin: 0;
+        }
+
+        .sticky-chat .chat-text {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px 20px;
+            font-size: 12px;
+            color: var(--warna-text)
+        }
+
+        .sticky-chat .chat-text span {
+            display: inline-block;
+            margin-right: auto;
+            padding: 10px 10px 10px 20px;
+            background-color: var(--warna-bg-chat);
+            border-radius: 3px 15px 15px
+        }
+
+        .sticky-chat .chat-text span:after {
+            content: 'Just now';
+            display: inline-block;
+            position: relative;
+            bottom: -5px;
+            left: -4px;
+            margin-left: 2px;
+            font-size: 9px;
+            color: var(--warna-text-alt)
+        }
+
+        .sticky-chat .chat-text span.typing {
+            margin: 15px 0 0 auto;
+            padding: 10px 20px 10px 10px;
+            border-radius: 15px 3px 15px 15px
+        }
+
+        .sticky-chat .chat-text span.typing:after,
+        .chat-menu {
+            display: none
+        }
+
+        .sticky-chat .chat-text span.typing svg {
+            height: 14px;
+            fill: var(--warna-text-alt)
+        }
+
+        .sticky-chat .chat-button {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .05);
+            overflow: hidden;
+            font-size: 12px;
+            color: var(--warna-text)
+        }
+
+        .sticky-chat .chat-button svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--warna-text-alt);
+            margin-left: auto;
+            transform: rotate(40deg);
+            -webkit-transform: rotate(40deg)
+        }
+
+        .chat-menu:checked+.sticky-button label {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .chat-menu:checked+.sticky-button label svg.svg-1 {
+            display: none
+        }
+
+        .chat-menu:checked+.sticky-button label svg.svg-2 {
+            display: table-cell
+        }
+
+        .chat-menu:checked+.sticky-button+.sticky-chat {
+            bottom: 77px;
+            right: 81px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .schat {
+            outline: none;
+            position: absolute;
+            bottom: 12px;
+            left: 15px;
+            border: none;
+            color: #0091EA;
+            font-weight: bold;
+        }
+
+        .blink_me {
+            animation: blinker 1.3s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <!--telgrapm button end-->
+
+</body>
+
+</html>
+
+</body>
+
+</html>
