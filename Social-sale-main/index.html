@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="assets/templates/basic/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/templates/basic/css/odometer.css">
 
-
+    
     <link rel="stylesheet" href="assets/templates/basic/css/main.css">
     <link rel="stylesheet" href="assets/templates/basic/css/custom.css">
 
@@ -303,7 +303,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="product.html">Product</a>
+                            <a class="nav-link" href="#">Product</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
@@ -327,7 +327,30 @@
         </div>
 
     </header>
-    
+        <!-- Pop-Up Overlay -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup">
+            <button class="close-popup" id="close-popup">&times;</button>
+            <h2>Payment Confirmation</h2>
+            <p>You have requested 1,400.00 NGN</p>
+            <p>Please pay 1,400.00 NGN for successful payment</p>
+            <div class="instructions">
+                <h3>Please follow the instructions below</h3>
+                <p>You can now make a manual deposit directly to our Moniepoint bank account and your funds will be added within less than 10 minutes.</p>
+                <p><strong>Acc No:</strong> 5385715982</p>
+                <p><strong>Acc Name:</strong> PRECIOUS MENE</p>
+                <p><strong>Bank:</strong> MONIEPOINT🏦</p>
+            </div>
+            <label for="receipt">Upload Payment Receipt:</label>
+            <input type="file" id="receipt" name="receipt">
+            <button id="pay-now-btn">Pay Now</button>
+        </div>
+        <div class="waiting-popup" id="waiting-popup">
+            <h2>Waiting for Verification</h2>
+            <p>Please wait while we verify your payment receipt.</p>
+        </div>
+    </div>
+
     <div class="conc">
         <div class="category"><h1 class="title2">Celebs-Offer</h1></div>
      
@@ -339,7 +362,7 @@
                 <h1 class="product-title">Foreign random FB (1000+ Friends) | Login with USA IP 2009-2023</h1>
                 <p class="product-price">₦3,800.00</p>
                 <p class="product-availability">Availability: <span>59 pcs.</span></p>
-                <button class="view-product-btn"><i class="fas fa-eye"></i> View Accounts</button>
+                <button class="view-product-btn"><i class="fas fa-eye"></i> purchase</button>
             </div>
             <div class="background-shape"></div>
         </div>
@@ -998,7 +1021,7 @@
         }
     </style>
     <!--telgrapm button end-->
-
+   <script src="assets/templates/basic/js/popup.js"></script>
 </body>
 
 </html>
